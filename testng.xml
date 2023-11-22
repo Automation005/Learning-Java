@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name = "browser"  value = "Chrome"/>
+  <parameter name = "url"      value = "https://tutorialsninja.com/demo"/>
+  <parameter name = "email"    value = "seleniumpanda@gmail.com"/>
+  <parameter name = "password" value = "selenium@123"/>
+  
+    <classes>
+      <class name="com.Day14_TestingNG_testing.xml.Parameterization_Using_TestNGxml_file"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

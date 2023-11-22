@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Tutorialsninja Suite">
+  <test name=" Tutorialsninja Test">
+  
+  
+    <classes>
+    
+    
+<class name="com.Day14_TestingNG_testing.xml.Register_Test" >
+         <methods>
+             <include name = "verifyingRegisterWithMandatoryFields"/>
+             <exclude name = "verifyingRegisterWithAllFields"/>
+             <include name = "verifyingRegisterWithExistingEmail"/>
+             <include name = "verifyingRegisterWithNoFields"/>
+          </methods>
+      </class>   
+      
+<class name="com.Day14_TestingNG_testing.xml.Login_Test" > 
+        <methods>
+             <include name = "verifyLoginWithValidCredentials"/>
+             <include name = "verifyLoginWithInvalidCredentials"/>
+             <exclude name = "verifyLoginWithInvalidEmailValidPassword"/>
+             <exclude name = "verifyLoginWithValidEmailInvalidPassword"/>
+             <exclude name = "verifyLoginWithNoCredentials"/>
+          </methods>
+      </class>
+       
+<class name="com.Day14_TestingNG_testing.xml.Search_Product" >
+          <methods>
+             <include name = "verifySearchWithValidProduct"/>
+             <exclude name = "verifySearchWithInvalidProduct"/>
+             <exclude name = "verifySearchWithNoProduct"/>
+          </methods>
+      </class>
+  
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
